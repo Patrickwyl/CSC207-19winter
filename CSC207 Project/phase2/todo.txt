@@ -1,0 +1,55 @@
+To-do list:
+1.limit of credit and lineOfCredit.(Add attribute limit, depends on different user levels)
+2.Add a new account type: Money market account extends Asset.
+a)When balance is equal to or above $5000, higher interest than normal saving account will be added(Add interest calculating interface)
+3.Add a new employee type: FinancialAdviser extends Employee.
+a)can be a user (same username and password but different windows, customer and employee)
+b)deal with the financial product requests and view the alerts.
+4.Add time-sensitive features, adding interest to savings accounts each month.
+a)add attribute to Saving to calculate and store daily interest
+b)update the balance at the beginning of each month
+5.Improve the manager "undo" functionality.
+a)store all the transactions in each account(ArrayList)
+b)undo n transactions on an account(use iterator)
+6.Add jointChequingAccount. (Add secondOwner attribute)
+two distinct users can both withdraw, deposit, and check the balance on the same account.
+7.Add USDChequingAccount extends Asset.(primary currency: canadian)
+charge bank service fee when exchange between different currencies
+8.Add financial products: mortgage, governmentBond and GIC,charge bank service fee
+a)send request(year, amount) to FinancialAdviser
+b)mortgage: charge primary chequing monthly, if balance not enough, send Financial_alert to FinancialAdviser
+c)GIC: automatically return money including higher interest to the primary chequing account at the end of the investment term.
+d)governmentBond: Canadian and USD
+9.Add testing password security level functionality.(regex)
+10.Add user level system.(regular, silver, gold, platinum)
+11.Add social credit attribute of customer.(display when the manager deal with the requests)
+(a given default value from the government when the manager creates the customer)
+12.GUI
+
+
+Drawback in phase1:
+1- ReadME File:#Already fixed
+-- Not that much informative. Only explained how to work with the program.
+-- It did not contain information about how to run the project and program.
+-- It took a while to correct the file path and run the program.
+
+2- Program Execution and Program Features #Already fixed
+--The program does not have some key features, e.g.:
+-- Saving the created user accounts on a file.
+-- When the program runs again the user account created in the previous run cannot be retrieved.
+The same IDs can be assigned to new user accounts in the second run.
+
+3- Program (Software) Design:#Already fixed
+-- No use of modules and subsystems. #fixed
+--- No use of interfaces. #fixed.
+No use of design patterns. #we used singleton, strategy,and Dependency Injection.
+--- Weak attempt to apply Solid principles, such as single responsibility principle for designing the classes. e.g. Customer Class and display options.
+There is no relation between a Customer and the interface options for a customer. More classes could have been defined with a more coherent set of responsibilities.
+--- Not following appropriate level of abstraction for defining data types:, e.g. static List<Account> accounts = new ArrayList<>(); #fixed
+
+
+4- Program Implementation and Code:#Already fixed
+-- Instances of Bad names for classes: e.g. Credit. It cannot be recognized that this class extends Account Class.
+-- or WriteFile Class. #fixed
+---- Many and prevailing Instances of long methods and complicated if then else statements, leading to long classes as a result: e.g. ATM., or Accounts, or Customer classes.
+--- Instances of duplicate codes and statements; e.g. Customer.displayOptions(); #fixed
