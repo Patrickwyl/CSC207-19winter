@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualization.FinancialAdviserMenu">
+   <children>
+      <SplitPane dividerPositions="0.7738693467336684" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0">
+        <items>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <GridPane layoutX="76.0" layoutY="25.0" prefHeight="266.0" prefWidth="484.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="275.0" text="Welcome!">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" onAction="#viewAccountsInfo" text="View Accounts Information" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#makeTransaction" prefHeight="27.0" prefWidth="183.0" text="Make Transactions" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#payBill" prefHeight="27.0" prefWidth="183.0" text="Pay Bills" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#withdraw" prefHeight="27.0" prefWidth="183.0" text="Withdraw" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#requestAccount" prefHeight="27.0" prefWidth="183.0" text="Request a New Account" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#requestProduct" prefHeight="27.0" prefWidth="192.0" text="Request a Financial Product" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#changePassword" prefHeight="27.0" prefWidth="192.0" text="Change Password" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#setPrimaryAccount" prefHeight="27.0" prefWidth="192.0" text="Set Primary Account" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#deposit" prefHeight="27.0" prefWidth="192.0" text="Deposit" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#logout" prefHeight="27.0" prefWidth="192.0" text="Log Out" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button layoutX="75.0" layoutY="24.0" mnemonicParsing="false" onAction="#viewFPRequestsOnClick" prefWidth="250.0" text="View Financial Product Requests">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

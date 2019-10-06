@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualization.LoadMoney">
+   <children>
+      <GridPane layoutX="130.0" layoutY="88.0" prefHeight="266.0" prefWidth="284.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="51.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.0" minWidth="10.0" prefWidth="233.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="\$5" />
+            <Label text="\$10" GridPane.rowIndex="1" />
+            <Label text="\$20" GridPane.rowIndex="2" />
+            <Label text="\$50" GridPane.rowIndex="3" />
+            <TextField fx:id="bill5Input" prefHeight="27.0" prefWidth="217.0" promptText="Please enter the amount of $5 bill" GridPane.columnIndex="1" />
+            <TextField fx:id="bill10Input" promptText="Please enter the amount of $10 bill" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="bill20Input" promptText="Please enter the amount of $20 bill" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="bill50Input" promptText="Please enter the amount of $50 bill" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane prefHeight="75.0" prefWidth="363.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="38.0" mnemonicParsing="false" onAction="#loadMoneyOnClick" text="Load" />
+                  <Button layoutX="152.0" layoutY="38.0" mnemonicParsing="false" onAction="#viewAlertOnCLick" text="View Alert" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <Button layoutX="513.0" layoutY="327.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+   </children>
+</AnchorPane>

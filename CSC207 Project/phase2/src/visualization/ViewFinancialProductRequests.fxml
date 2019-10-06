@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualization.ViewFinancialProductRequests">
+   <children>
+      <SplitPane dividerPositions="0.5959595959595959" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+        <items>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <TextFlow fx:id="requestsDisplay" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="47.0" layoutY="100.0" text="request number:" />
+                  <ChoiceBox fx:id="requestNumberInput" layoutX="44.0" layoutY="137.0" prefWidth="150.0" />
+                  <Button layoutX="28.0" layoutY="232.0" mnemonicParsing="false" onAction="#approveOnClick" text="Approve" />
+                  <Button layoutX="149.0" layoutY="232.0" mnemonicParsing="false" onAction="#rejectOnClick" text="Reject" />
+                  <Button layoutX="159.0" layoutY="319.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

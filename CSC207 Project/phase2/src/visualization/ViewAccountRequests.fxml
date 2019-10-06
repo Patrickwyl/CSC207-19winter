@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualization.ViewAccountRequests">
+   <children>
+      <SplitPane dividerPositions="0.5707070707070707" prefHeight="400.0" prefWidth="602.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="361.0" prefWidth="264.0">
+               <children>
+                  <ScrollPane prefHeight="400.0" prefWidth="338.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0">
+                           <children>
+                              <TextFlow fx:id="requestsDisplay" prefHeight="0.0" prefWidth="338.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="169.0">
+               <children>
+                  <Label layoutX="38.0" layoutY="87.0" text="request number:" />
+                  <ChoiceBox fx:id="requestNumberInput" layoutX="38.0" layoutY="124.0" prefWidth="150.0" />
+                  <Button layoutX="32.0" layoutY="227.0" mnemonicParsing="false" onAction="#acceptOnClick" text="Approve" />
+                  <Button layoutX="151.0" layoutY="227.0" mnemonicParsing="false" onAction="#rejectOnClick" text="Reject" />
+                  <Button layoutX="178.0" layoutY="306.0" mnemonicParsing="false" onAction="#backOnClick" text="Back" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

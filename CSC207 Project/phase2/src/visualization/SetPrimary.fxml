@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visualization.SetPrimaryAccount">
+   <children>
+      <SplitPane dividerPositions="0.6036789297658863" prefHeight="400.0" prefWidth="600.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="378.0">
+               <children>
+                  <TextFlow fx:id="chequingInfo" layoutY="-1.0" prefHeight="400.0" prefWidth="357.0" />
+               </children></AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="251.0">
+               <children>
+                  <ChoiceBox fx:id="chequingAccounts" layoutX="14.0" layoutY="247.0" prefHeight="27.0" prefWidth="191.0" />
+                  <Label layoutX="14.0" layoutY="221.0" prefHeight="20.0" prefWidth="191.0" text="New primary account:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="138.0" layoutY="293.0" mnemonicParsing="false" onAction="#setPrimary" text="Confirm" />
+                  <Button layoutX="138.0" layoutY="329.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="67.0" text="Cancel" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
