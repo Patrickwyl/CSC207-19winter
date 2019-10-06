@@ -1,0 +1,11 @@
+We finished our UML design and start writing code.
+Here are our tasks for each teammate.
+
+Yulin Wang: class Account, Login, WriteFile and ReadFile
+Tianjing Ruan: class Person and Manager
+Qiwen Zhao: class Transaction and Customer
+Jiaying He: class ATM
+Chunjing Zhang: class Accounts and Users
+Meilin Yang: six subclasses of Account
+
+We finished our class Simulator, design.pdf(UML) and README.txt all together.
